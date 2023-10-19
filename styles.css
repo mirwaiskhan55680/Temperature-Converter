@@ -1,0 +1,175 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #b1bfb9, #090927);
+    color: #ffffff;
+}
+
+.car{
+    font-size: 22px;
+    background-color: rgb(0, 0, 0);
+    padding: 5%;
+    border-radius: 10px;
+    animation: fadeIn 10s ease;
+
+}
+
+.logo{
+    
+    position: absolute;    
+    opacity: 10%;
+    margin-left: 10%;
+    margin-bottom: 20%;
+    margin-top: -5%;
+    position: fixed; top: 0; /* Adjust these values to position the logo */
+    left: 0;
+    width: 80vw;
+    height: 120vh;
+    opacity: 0.1; /* Set the desired opacity for the background logo */
+    pointer-events: none; /* Ensures the logo doesn't interfere with mouse events */
+    
+}
+
+.khan{
+    font-size: 50px;
+    font-weight: bold;
+    animation: fadeIn 10s ease;
+
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tab {
+    background-color: #ffffff;
+    color: #3b3b98;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.tab.active {
+    background-color: #3b3b98;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgb(179, 179, 179);
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 450px;
+    margin-bottom: 10%;
+}
+    
+
+.input-container {
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: #6e7575;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 300px;
+    margin-right: 60%;
+    margin-left: 7%;
+        width: 100%;
+        max-width: 300px; /* Set a maximum width for the input container */
+        margin: 0 auto; /* Center the input container horizontally */
+        padding: 20px; /* Add padding to the input container */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+    
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    background-color: #3b3b98;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000ad;
+    font-size: 15px;
+}
+
+
+.result {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3b3b98;
+    animation: fadeIn 0.5s ease;
+    background-color: #6ee7b7;
+    background-color: #ffffff;
+    
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Add your existing CSS styles here */
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Add some padding to the container */
+    }
+
+    .card {
+        width: 80%; /* Make the card width 80% of the viewport width */
+        margin: 0 auto; /* Center the card horizontally */
+    }
+
+    .input-container {
+        width: 100%; /* Make the input container width 100% */
+    }
+
+    .logo {
+        display: none; /* Hide the logo on smaller screens */
+    }
+}
